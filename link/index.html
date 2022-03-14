@@ -17,7 +17,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>YYpure</title>
+  <title>yuanyin</title>
   <meta name="description" content="hihi                                         樂高機器人             MiniPlan 機器人             photoshop             傳送門             網頁前端工程             程式語言             高中課業整">
 <meta property="og:type" content="website">
 <meta property="og:title" content="YYpure">
@@ -169,6 +169,16 @@
           </a>
         </li>
         
+        
+        <li class="menu-item menu-item-chat">
+          <a href="/YYpure/chat">
+            
+            <i class="icon icon-comment"></i>
+            
+            <span class="menu-title">留言</span>
+          </a>
+        </li>
+        
       </ul>
       
 	
@@ -193,7 +203,7 @@
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>欢迎交流与分享经验!</p>
+                <p>4/3學習歷程截止!!</p>
             </div>
         </div>
     </div>
@@ -329,12 +339,12 @@
   <ul class="post-copyright list-unstyled">
     
     <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
+      <strong>本文鏈結：</strong>
       <a href="http://example.com/link/index.html" title="" target="_blank" rel="external">http://example.com/link/index.html</a>
     </li>
     
     <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+      <strong>版權聲明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
     </li>
   </ul>
 </blockquote>
@@ -363,6 +373,8 @@
     
   <section id="comments">
   	
+      <div id="vcomments"></div>
+    
   </section>
 
 
@@ -439,6 +451,31 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
    
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
 
 
 

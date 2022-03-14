@@ -17,7 +17,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | YYpure</title>
+  <title>Hello World | yuanyin</title>
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
@@ -167,6 +167,16 @@
           </a>
         </li>
         
+        
+        <li class="menu-item menu-item-chat">
+          <a href="/YYpure/chat">
+            
+            <i class="icon icon-comment"></i>
+            
+            <span class="menu-title">留言</span>
+          </a>
+        </li>
+        
       </ul>
       
 	
@@ -191,7 +201,7 @@
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>欢迎交流与分享经验!</p>
+                <p>4/3學習歷程截止!!</p>
             </div>
         </div>
     </div>
@@ -323,12 +333,12 @@
   <ul class="post-copyright list-unstyled">
     
     <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
+      <strong>本文鏈結：</strong>
       <a href="http://example.com/2022/03/13/hello-world/" title="Hello World" target="_blank" rel="external">http://example.com/2022/03/13/hello-world/</a>
     </li>
     
     <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+      <strong>版權聲明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
     </li>
   </ul>
 </blockquote>
@@ -357,6 +367,8 @@
     
   <section id="comments">
   	
+      <div id="vcomments"></div>
+    
   </section>
 
 
@@ -449,6 +461,31 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
    
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
 
 
 
